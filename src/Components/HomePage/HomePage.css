@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&display=swap");
+
+body {
+  margin: 0;
+}
+
+.home-page {
+  background: linear-gradient(
+      136deg,
+      rgb(68, 132, 206),
+      rgb(26, 215, 192),
+      rgb(255, 155, 17),
+      rgb(155, 89, 182),
+      rgb(255, 127, 127),
+      rgb(236, 240, 241)
+    )
+    0% 0% / 1200% 1200%;
+  height: 100vh;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: xx-large;
+  text-overflow: wrap;
+  animation: animate 50s ease infinite;
+}
+
+@keyframes animate{
+  0%{
+    background-position:0 50%;
+  }
+  50%{
+    background-position:100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 200;
+  color: beige;
+}
+
+.content {
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 100;
+  color: beige;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.icon {
+  margin: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.8s;
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button a{
+  text-decoration: none;
+  color:white ;
+}
+.button a:hover{
+  color:white ;
+}
+.about-me-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+  border: solid white 2px;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+  }
+}
+.social-media a{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  margin-left: 10px;
+}
+
+.social-media a:hover {
+ color:#000;
+}
+
+
+
+
+@media(max-width:548px) {
+  .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+
+  margin-bottom: 10px;
+  }
+
+  
+}

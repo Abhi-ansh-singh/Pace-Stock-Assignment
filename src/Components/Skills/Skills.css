@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&display=swap");
+
+body {
+    margin: 0;
+  }
+.skill-container{
+    padding: 3rem;
+    font-family: Noto Sans ,sans-serif;
+    font-size: x-large;
+}
+
+.progress-container{
+display: grid;
+align-items: center;
+}
+
+.skill-info p{
+    text-align: start;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.progress-slot{
+    width: 80%;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-title{
+    display:inline-block;
+    color:#0d6efd;
+     padding: 2px 80px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.sub-title:hover{
+    color: #000;
+    border: 1px 1px 0 1px solid #000;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.skills-items{
+    display: inline-block;
+    /* flex-grow: 1; */
+    width: 80%;
+}
+
+@media(max-width:900px){
+.sub-title {
+    margin-right: 10px;
+    padding: 3px;
+    font-size: small;
+    font-weight: bold;
+    }
+}
+
+@media(max-width:900px){
+    .sub-title {
+        margin-right: 10px;
+        padding: 3px;
+        font-size: small;
+        font-weight: bold;
+        }
+
+        .progress-slot-btn{
+            text-align: center;
+        
+        }
+    }
